@@ -1,4 +1,3 @@
-cat << 'EOF' > pedido.py
 from entrega import calcular_entrega
 
 
@@ -23,4 +22,3 @@ def criar_resumo_pedido(itens, endereco_loja, endereco_cliente, forma_pagamento,
         "troco": troco,
         "link_mapa": link_mapa,
     }
-EOF

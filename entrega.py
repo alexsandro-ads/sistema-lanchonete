@@ -1,4 +1,3 @@
-cat << 'EOF' > entrega.py
 import urllib.parse
 from geopy.distance import geodesic
 from geopy.geocoders import Nominatim
@@ -23,4 +22,3 @@ def calcular_entrega(endereco_loja, endereco_cliente, valor_por_km=2.50, taxa_mi
     link_mapa = f"https://www.google.com/maps/dir/?api=1&destination={destino_encoded}"
 
     return round(distancia_km, 2), valor_frete, link_mapa
-EOF
